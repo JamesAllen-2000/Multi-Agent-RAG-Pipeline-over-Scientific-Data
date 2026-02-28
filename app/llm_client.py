@@ -45,8 +45,13 @@ def get_embedding_client():
         model_name = getattr(settings, "embedding_model", "sentence-transformers/all-MiniLM-L6-v2")
         return HuggingFaceEmbeddings(model_name=model_name)
 
+    # Default to openAI
+    key = (settings.openai_api_key or "").strip()
+    if not key:
+        raise ValueError("OPENAI_API_KEY is required when embedding_provider is 'openai'")
+    
     return OpenAI(
-        api_key=settings.openai_api_key,
+        api_key=key,
         timeout=getattr(settings, "openai_timeout", 60.0),
     )
 
@@ -54,6 +59,7 @@ def get_embedding_client():
 def has_llm_configured() -> bool:
     """True if the configured LLM provider has an API key set."""
     settings = get_settings()
-    if getattr(settings, "llm_provider", "openai").strip().lower() == "groq":
+    provider = getattr(settings, "llm_provider", "openai").strip().lower()
+    if provider == "groq":
         return bool((settings.groq_api_key or "").strip())
     return bool((settings.openai_api_key or "").strip())

@@ -1,8 +1,11 @@
 /venv/
-/.env
+.env
 /data/chroma
 /data/tables
 sources.db
 .env.example
 /__pycache__
 /samples
+/venv311
+design.md
+PRD.md

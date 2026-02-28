@@ -57,7 +57,11 @@ def parse_atom_feed(xml_bytes: bytes) -> list[ArxivEntry]:
             continue
         title = _text(_find(entry_el, "atom:title", ARXIV_NS))
         summary = _text(_find(entry_el, "atom:summary", ARXIV_NS))
-        authors = [_text(a.find("atom:name", ARXIV_NS)) for a in entry_el.findall("atom:author", ARXIV_NS)]
+        authors = []
+        for a in entry_el.findall("atom:author", ARXIV_NS):
+            name_el = a.find("atom:name", ARXIV_NS)
+            if name_el is not None:
+                authors.append(_text(name_el))
         published = _text(_find(entry_el, "atom:published", ARXIV_NS))
         updated = _text(_find(entry_el, "atom:updated", ARXIV_NS))
         link_abs = ""

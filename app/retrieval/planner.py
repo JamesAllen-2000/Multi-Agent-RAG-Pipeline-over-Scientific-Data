@@ -91,20 +91,26 @@ class RetrievalPlanner:
         from langchain_core.messages import HumanMessage, SystemMessage
 
         from app.langchain_client import get_langchain_chat_model
-        from app.models import RetrievalPlan
-
-        llm = get_langchain_chat_model().with_structured_output(RetrievalPlan)
+        llm = get_langchain_chat_model()
+        # Groq might reject `strict=True` in json_schema. We can just use standard json mode
+        # or rely on prompt instruction and basic Pydantic parsing.
+        # Langchain allows passing method="json_mode" or simply calling with default params.
+        # But `.with_structured_output` usually handles the prompt injection.
+        llm_with_struct = llm.with_structured_output(RetrievalPlan, method="json_mode" if getattr(self.settings, "llm_provider", "openai").strip().lower() == "groq" else "function_calling")
+        
         for attempt in range(self.settings.openai_max_retries + 1):
             try:
-                plan = await llm.ainvoke([
+                plan = await llm_with_struct.ainvoke([
                     SystemMessage(content=PLANNER_SYSTEM),
                     HumanMessage(content=user),
                 ])
                 return plan
             except Exception as e:
+                import traceback
+                error_trace = traceback.format_exc()
                 logger.warning(
                     "planner_attempt_failed",
-                    extra={"attempt": attempt + 1, "error": type(e).__name__},
+                    extra={"attempt": attempt + 1, "error": type(e).__name__, "trace": error_trace},
                 )
                 if attempt < self.settings.openai_max_retries:
                     await asyncio.sleep(0.5 * (attempt + 1))
@@ -124,13 +130,14 @@ class RetrievalPlanner:
         else:
             try:
                 raw = await self._call_direct(user)
+                # Strip markdown code blocks more robustly if present
                 if raw.startswith("```"):
                     raw = re.sub(r"^```(?:json)?\s*", "", raw)
-                    raw = re.sub(r"\s*```$", "", raw)
+                    raw = re.sub(r"\n?```\s*$", "", raw)
                 data = json.loads(raw)
                 plan = RetrievalPlan(**data)
-            except (json.JSONDecodeError, ValidationError):
-                logger.warning("planner_parse_failed")
+            except (json.JSONDecodeError, ValidationError) as e:
+                logger.warning("planner_parse_failed", extra={"error": str(e), "raw": raw[:100]})
                 return _fallback_plan(question)
 
         allowed = {"document", "structured", "arxiv"}

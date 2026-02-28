@@ -47,7 +47,8 @@ def _run_tool(name: str, arguments: dict) -> str:
 
 def _extract_citations(text: str) -> set[str]:
     out: set[str] = set()
-    for m in re.finditer(r"\[Source\s+([\w\-.]+)\]", text or "", re.I):
+    # Handle formats like [Source ID], [Source: ID], Source ID, etc.
+    for m in re.finditer(r"(?:\[?Source\s*:?\s*)([A-Za-z0-9\-_.]+)\]?", text or "", re.I):
         out.add(m.group(1))
     return out
 

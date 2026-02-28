@@ -69,7 +69,9 @@ app.add_middleware(
 @app.middleware("http")
 async def request_id_middleware(request: Request, call_next):
     """Assign a request_id to each request for tracing. No PII in the ID."""
-    rid = request.headers.get("X-Request-ID") or str(uuid.uuid4())[:8]
+    rid = request.headers.get("X-Request-ID")
+    if not rid or not rid.strip():
+        rid = str(uuid.uuid4())[:8]
     request_id_ctx.set(rid)
     response = await call_next(request)
     response.headers["X-Request-ID"] = rid

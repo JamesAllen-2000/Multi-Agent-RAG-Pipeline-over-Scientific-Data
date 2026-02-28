@@ -79,8 +79,8 @@ def _structured_query(query: str, settings) -> list[RetrievedChunk]:
                 path = Path(path_str)
                 if not path.exists():
                     continue
-                df = pd.read_csv(path, nrows=50)
-                text = f"Columns: {list(df.columns)}\n\n" + df.head(20).to_string()
+                df = pd.read_csv(path, nrows=20, on_bad_lines="skip")
+                text = f"Columns: {list(df.columns)}\n\n" + df.to_string()
                 chunks.append(
                     RetrievedChunk(
                         source_id=src.source_id,
@@ -149,9 +149,9 @@ class RetrievalExecutor:
         all_chunks: list[RetrievedChunk] = []
         seen = set()
         
-        for res in results:
+        for i, res in enumerate(results):
             if isinstance(res, Exception):
-                logger.warning("executor_step_failed_concurrently", extra={"error": str(res)})
+                logger.warning("executor_step_failed_concurrently", extra={"error": str(res), "source_type": steps[i].source_type})
                 continue
             for chunk in res:
                 key = (chunk.source_id, chunk.content[:100])
