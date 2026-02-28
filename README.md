@@ -1,6 +1,6 @@
 ﻿# Multi-Agent RAG Pipeline over Scientific Data
 
-A minimal multi-agent retrieval and reasoning pipeline that answers research questions using heterogeneous sources. The system retrieves information across **papers/documents** (local PDFs or the live **arXiv API**) and **structured databases** (local CSVs or Kaggle datasets). It features a **retrieval planner agent** that decides where to search, and a **reasoning agent** that synthesizes evidence while optionally calling a calculator tool.
+A minimal multi-agent retrieval and reasoning pipeline that answers research questions using heterogeneous sources. The system retrieves information across **papers/documents** (local PDFs or the live **arXiv API**) and **structured databases** (Kaggle datasets). It features a **retrieval planner agent** that decides where to search, and a **reasoning agent** that synthesizes evidence while optionally calling a calculator tool.
 
 ---
 
@@ -36,10 +36,10 @@ GROQ_API_KEY=your_groq_key_here
 # OpenAI key is REQUIRED if using OpenAI for text embeddings
 OPENAI_API_KEY=your_openai_key_here
 
-# (Optional) Enable/disable LangChain abstractions
+# Enable/disable LangChain abstractions
 USE_LANGCHAIN=true
 
-# (Optional) For Kaggle dataset ingestion
+# For Kaggle dataset ingestion
 KAGGLE_USERNAME=...
 KAGGLE_KEY=...
 ```
