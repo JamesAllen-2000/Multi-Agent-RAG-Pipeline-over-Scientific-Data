@@ -89,7 +89,13 @@ def _structured_query(query: str, settings) -> list[RetrievedChunk]:
                 else:
                     df = pd.DataFrame()
                     
+                # Truncate string columns to prevent massive payload sizes
+                for col in df.select_dtypes(include=["object", "string"]):
+                    df[col] = df[col].astype(str).str.slice(0, 100) + "..."
+                    
                 text = f"Columns: {list(df.columns)}\n\n" + df.to_string()
+                if len(text) > 4000:
+                    text = text[:4000] + "\n...[Data Truncated]"
                 chunks.append(
                     RetrievedChunk(
                         source_id=src.source_id,

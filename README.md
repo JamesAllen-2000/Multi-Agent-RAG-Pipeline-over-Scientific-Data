@@ -53,7 +53,7 @@ python -m scripts.ingest document path/to/paper.pdf --title "My Paper"
 python -m scripts.ingest structured path/to/dataset.csv --title "Measurements"
 
 # Ingest live from arXiv
-python -m scripts.ingest arxiv --query "ti:electron thermal conductivity" --max-results 20
+python -m scripts.ingest arxiv --query "all:electron thermal conductivity" --max-results 20
 python -m scripts.ingest arxiv --id-list "2301.00001,2302.00002"
 
 # Ingest an entire Kaggle repository

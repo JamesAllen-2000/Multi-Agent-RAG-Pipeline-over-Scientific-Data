@@ -14,7 +14,7 @@ from app.models import RetrievedChunk
 from app.reasoning.tools import calculator
 
 
-REASONING_SYSTEM = """You are a scientific reasoning agent. You must answer the user's question using ONLY the provided evidence. Every claim must be traceable to a cited source (by source_id). If the evidence is insufficient to answer, say so clearly and do not guess. You have a calculator tool: use it for any arithmetic (e.g. converting units, summing numbers from the evidence). Do not make up numbers."""
+REASONING_SYSTEM = """You are a scientific reasoning agent. You must answer the user's question using ONLY the provided evidence. Every claim must be traceable to a cited source (by source_id). If the provided evidence contains partial clues rather than a direct answer, synthesize the best possible explanation from the context instead of stating that the evidence is insufficient. You have a calculator tool: use it for any arithmetic (e.g. converting units, summing numbers from the evidence). Do not make up numbers."""
 
 CALCULATOR_TOOL = {
     "type": "function",
@@ -48,7 +48,7 @@ def _run_tool(name: str, arguments: dict) -> str:
 def _extract_citations(text: str) -> set[str]:
     out: set[str] = set()
     # Handle formats like [Source ID], [Source: ID], Source ID, etc.
-    for m in re.finditer(r"(?:\[?Source\s*:?\s*)([A-Za-z0-9\-_.]+)\]?", text or "", re.I):
+    for m in re.finditer(r"(?:\[?Source\b\s*:?\s*)([A-Za-z0-9\-_.]+)\]?", text or "", re.I):
         out.add(m.group(1))
     return out
 

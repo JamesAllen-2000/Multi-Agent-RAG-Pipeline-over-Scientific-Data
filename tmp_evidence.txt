@@ -1,0 +1,159 @@
+[Source cond-mat_0005529v2]
+Low Temperature Thermal Transport in High Temperature Superconducting BSCCO via Y-doped Insulating Analogue
+
+In order to separate electronic and phonon mechanisms of thermal transport in high temperature superconducting Bi2212, we measured thermal conductivity of single crystals of Y-doped Bi2212, an insulating analogue of pure Bi2212, in the temperature range between 40 mK and 2 K. Temperature dependence of the thermal conductivity of insulating samples changes from T$^{1.7}$ between 1 and 2 K to $T^{2.6}$ below 200 mK, indicating saturation of the phonon mean free path with decreasing temperature. Overall, thermal conductivity of the insulating samples (which is due entirely to phonons) is strongly suppressed in comparison to that of the superconducting samples. Therefore, a large (and at the lowest temperatures, predominant) part of the total thermal transport in superconducting Bi2212 is due to electrons.
+
+---
+
+[Source 1202.4380v2]
+Measuring the thermal diffusivity in a student laboratory
+
+The paper describes a method for measuring the thermal diffusivity of materials having a high thermal conductivity. The apparatus is rather simple and low-cost, being therefore suitable in a laboratory for undergraduate students of engineering schools, where several set-ups are often required. A recurrence numerical approach solves the thermal field in the specimen, which is depending on the thermal diffusivity of its material. The numerical method requires the temperature data from two different positions in the specimen, measured by two thermocouples connected to a temperature logger.
+
+---
+
+[Source 1605.01471v2]
+The unexpected thermal conductivity from graphene disk, carbon nanocone to carbon nanotube
+
+Graphene and single-wall carbon nanotube (SWCNT) have attracted great attention because of their ultra-high thermal conductivity. However, there are few works exploring the relations of their thermal conductivity quantitatively. The carbon nanocone (CNC) is a graded structure fall in between graphene disk (GD) and SWCNT. We perform non-equilibrium molecular dynamics (NEMD) simulation to study the thermal conductivity of CNC with different apex angles, and then compare them with that of GD and SWCNT. Our results show that, different from the homogeneous thermal conductivity in SWCNT, the CNC also has a natural graded thermal conductivity which is similar to the GD. Unexpectedly, the graded rate keeps almost the same when the apex angle decreases from 180° (GD) to 19°, but then suddenly declines to zero when the apex angle decreases from 19° to 0° (SWCNT). What is more interesting, the graded effect is not diminished when the interatomic force constant is weakened and mean free path is shorten. That is, besides nanoscale, the graded effect can be observed in macroscale graphene or CNC structures.
+
+---
+
+[Source 1510.01938v2]
+Ab initio studies on the lattice thermal conductivity of silicon clathrate frameworks II and VIII
+
+The lattice thermal conductivities of silicon clathrate frameworks II and VIII are investigated by using ab initio lattice dynamics and iterative solution of the linearized Boltzmann transport equation(BTE) for phonons. Within the temperature range 100-350 K, the clathrate structures II and VIII were found to have lower lattice thermal conductivity values than silicon diamond structure (d-Si) by factors of 1/2 and 1/5, respectively. The main reason for the lower lattice thermal conductivity of the clathrate structure II in comparison to d-Si was found to be the harmonic phonon spectra, while in the case of the clathrate structure VIII, the difference is mainly due to the harmonic phonon spectra and partly due to shorter relaxation times of phonons. In the studied clathrate frameworks, the anharmonic effects have larger impact on the lattice thermal conductivity than the size of the unit cell. For the structure II, the predicted lattice thermal conductivity differs approximately by factor of 20 from the previous experimental results obtained for a polycrystalline sample at room temperature.
+
+---
+
+[Source 0709.1863v1]
+Reducing the Possibility of Subjective Error in the Determination of the Structure-Function-Based Effective Thermal Conductivity of Boards
+
+The thermal response function given to a unit-step dissipation accurately characterizes the thermal system. Instead of the thermal response function the so-called structure function describing three-dimensional as the equivalent model of one-dimensional heat-spreading, created from the thermal response function with the help of complex mathematical procedures, is often used. Using the structure function the partial thermal capacity and partial heat resistance of certain elements of the thermal system can be identified. If the geometrical measurements of a thermal system of simple geometry and homogeneous material (such as a homogeneous rod or board, etc.) are known, the coefficient of thermal conductivity of the material in question can be determined from two points of the structure function at 2-5 per cent of accuracy. In this paper a method is presented which applies a wide range/section instead of two points of the cumulative structure function to determine the thermal coefficient, thus reducing the subjective error deriving from the selection of the two points. The above method is presented and illustrated in simulated as well as measured thermal transient responses.
+
+---
+
+[Source d65d9bdcbe1b97e6]
+Columns: ['id', 'submitter', 'authors', 'title', 'comments', 'journal-ref', 'doi', 'report-no', 'categories', 'license', 'abstract', 'versions', 'update_date', 'authors_parsed']
+
+          id              submitter                                                                                                   authors                                                                                                     title                                                                                                  comments                                            journal-ref                                  doi                            report-no            categories                                                 license                                                                                                  abstract                                                                                                 versions    update_date                                                                                           authors_parsed
+0   704.0001      Pavel Nadolsky...                                                  C. Bal\'azs, E. L. Berger, P. M. Nadolsky, C.-P. Yuan...               Calculation of prompt diphoton production cross sections at Tevatron and\n  LHC energies...                                                                37 pages, 15 figures; published version...                            Phys.Rev.D76:013009,2007...        10.1103/PhysRevD.76.013009...                  ANL-HEP-PR-07-12...             hep-ph...                                                     NaN    A fully differential calculation in perturbative quantum chromodynamics is\npresented for the produ...  [{'version': 'v1', 'created': 'Mon, 2 Apr 2007 19:18:42 GMT'}, {'version': 'v2', 'created': 'Tue, 24...  2008-11-26...    [['Balázs', 'C.', ''], ['Berger', 'E. L.', ''], ['Nadolsky', 'P. M.', ''], ['Yuan', 'C. -P.', '']]...
+1   704.0002        Louis Theran...                                                                        Ileana Streinu and Louis Theran...                                                               Sparsity-certifying Graph Decompositions...                                                                  To appear in Graphs and Combinatorics...                                                    NaN                                  NaN                                  NaN      math.CO cs.CG...  http://arxiv.org/licenses/nonexclusive-distrib/1.0/...    We describe a new algorithm, the $(k,\ell)$-pebble game with colors, and use\nit obtain a character...  [{'version': 'v1', 'created': 'Sat, 31 Mar 2007 02:26:18 GMT'}, {'version': 'v2', 'created': 'Sat, 1...  2008-12-13...                                                  [['Streinu', 'Ileana', ''], ['Theran', 'Louis', '']]...
+2   704.0003         Hongjun Pan...                                                                                            Hongjun Pan...                   The evolution of the Earth-Moon system based on the dark matter field\n  fluid model...                                                                                    23 pages, 3 figures...                                                    NaN                                  NaN                                  NaN     physics.gen-ph...                                                     NaN    The evolution of Earth-Moon system is described by the dark matter field\nfluid model proposed in t...  [{'version': 'v1', 'created': 'Sun, 1 Apr 2007 20:46:54 GMT'}, {'version': 'v2', 'created': 'Sat, 8 ...  2008-01-13...                                                                              [['Pan', 'Hongjun', '']]...
+3   704.0004        David Callan...                                                                                           David Callan...             A determinant of Stirling cycle numbers counts unlabeled acyclic\n  single-source automata...      
+...[Data Truncated]
+
+---
+
+[Source d3a3563756323b82]
+Columns: ['id', 'name', 'value']
+
+   id     name  value
+0   1  test...     10
+
+---
+
+[Source 1605.01471v2]
+Title: The unexpected thermal conductivity from graphene disk, carbon nanocone to carbon nanotube
+
+Abstract: Graphene and single-wall carbon nanotube (SWCNT) have attracted great attention because of their ultra-high thermal conductivity. However, there are few works exploring the relations of their thermal conductivity quantitatively. The carbon nanocone (CNC) is a graded structure fall in between graphene disk (GD) and SWCNT. We perform non-equilibrium molecular dynamics (NEMD) simulation to study the thermal conductivity of CNC with different apex angles, and then compare them with that of GD and SWCNT. Our results show that, different from the homogeneous thermal conductivity in SWCNT, the CNC also has a natural graded thermal conductivity which is similar to the GD. Unexpectedly, the graded rate keeps almost the same when the apex angle decreases from 180° (GD) to 19°, but then suddenly declines to zero when the apex angle decreases from 19° to 0° (SWCNT). What is more interesting, the graded effect is not diminished when the interatomic force constant is weakened and mean free path is shorten. That is, besides nanoscale, the graded effect can be observed in macroscale graphene or CNC structures.
+
+---
+
+[Source 1508.02156v3]
+Title: Low lattice thermal conductivity of stanene
+
+Abstract: A fundamental understanding of phonon transport in stanene is crucial to predict the thermal performance in potential stanene-based devices. By combining first-principle calculation and phonon Boltzmann transport equation, we obtain the lattice thermal conductivity of stanene. A much lower thermal conductivity (11.6 W/mK) is observed in stanene, which indicates higher thermoelectric efficiency over other 2D materials. The contributions of acoustic and optical phonons to the lattice thermal conductivity are evaluated. Detailed analysis of phase space for three-phonon processes shows that phonon scattering channels LA+LA/TA/ZA$\leftrightarrow$TA/ZA are restricted, leading to the dominant contributions of high-group-velocity LA phonons to the thermal conductivity. The size dependence of thermal conductivity is investigated as well for the purpose of the design of thermoelectric nanostructures.
+
+---
+
+[Source 2112.13757v3]
+Title: Abnormally High Thermal Conductivity in Fivefold Twinned Diamond Nanowires
+
+Abstract: Fivefold twins (5FTs), discovered nearly 200 years ago, are a common multiply twinned structure that usually dramatically deteriorate the thermal transport properties of nanomaterials. Here, we report the anomalous thermal conductivity ($κ$) in a novel fivefold twinned diamond nanowires (5FT-DNWs). The $κ$ of 5FT-DNWs is effectively enhanced by the defects of 5FT boundaries, and non-monotonically changes with the cross-sectional area ($\textit{S}$). Above the critical $\textit{S}$ = 7.1 nm$^{2}$, 5FT-DNWs show a constant value of $κ$, whereas below it, there appears a sharp increase in $κ$ with decreasing $\textit{S}$. More importantly, 5FT-DNWs with minimal $\textit{S}$ show a superior $κ$ over the bulk diamond. By confirming the Normal-process-dominated scattering event, it is demonstrated that the phonon hydrodynamic behavior plays a determinative role in abnormally high $κ$ of 5FT-DNWs with small $\textit{S}$. The super-transported phonon hydrodynamic phenomenon unveiled in the twinned diamond nanowires may provide a new route for pursuing highly thermally conductive nanomaterials.
+
+---
+
+[Source 2006.12805v2]
+Title: Thermal interfacial resistance and nanolayer effect on the thermal conductivity of Al2O3-CO2 nanofluid: A Molecular Dynamics approach
+
+Abstract: Nanofluids are known to have significantly different thermal properties
+relative to the corresponding conventional fluids. Heat transfer at the
+solid-fluid interface affects the thermal properties of nanofluids. The current work helps in understanding the role of two nanoscale phenomena, namely ordering of fluid layer around the nanoparticle (nanolayer) and thermal resistance at the interface of solid-fluid in the enhancement of thermal conductivity of Al2O3 - CO2 nanofluid. In this study, molecular dynamics (MD) simulations have been used to study the thermal interfacial resistance by transient non-equilibrium heat technique and nanolayer formed between Al2O3 nanoparticle (np) and surrounded CO2 molecules in the gaseous and supercritical phase. The nanoparticle diameter (dNP) is varied between 2 and 5 nm to investigate the size effect on thermal interfacial resistance (TIR) and thermal conductivity of nanofluid and the results indicate that the TIR for larger diameters is relatively high in both the phases. The study of the effect of surface wettability and temperature on TIR reveals that the resistance decreases with increase in interaction strength and temperature, but is entirely independent at higher temperatures, in both gaseous and supercritical nanofluid. A density distribution study of the nanolayer and the monolayer around the nanoparticle revealed that the latter is more ordered in smaller diameter with less thermal resistance. However, nanolayer study reveals that the nanoparticle with bigger diameters are more suitable for the cooling/heating purpose, as the system with larger diameters has higher thermal conductivity. Results show that the nanolayer plays a significant role in determining the effective thermal conductivity of the nanofluid, while the influence of TIR appears negligible compared to the nanolayer.
+
+---
+
+[Source 1407.7431v2]
+Title: Thermal conductivity due to phonons in the core of superfluid neutron stars
+
+Abstract: We compute the contribution of phonons to the thermal conductivity in the core of superfluid neutron stars. We use effective field theory techniques to extract the phonon scattering rates, written as a function of the equation of state of the system. We also calculate the phonon dispersion law beyond linear order, which depends on the gap of superfluid neutron matter. With all these ingredients, we solve the Boltzmann equation numerically using a variational approach. We find that the thermal conductivity $κ$ is dominated by combined small and large angle binary collisions. As in the color-flavor-locked superfluid, we find that our result can be well approximated by $κ\propto 1/ Δ^6$, where $Δ$ is the neutron gap, the constant of proportionality depending on the density. We further comment on the possible relevance of electron and superfluid phonon collisions in obtaining the total contribution to the thermal conductivity in the core of superfluid neutron stars.
+
+---
+
+[Source 1202.4380v2]
+Title: Measuring the thermal diffusivity in a student laboratory
+
+Abstract: The paper describes a method for measuring the thermal diffusivity of materials having a high thermal conductivity. The apparatus is rather simple and low-cost, being therefore suitable in a laboratory for undergraduate students of engineering schools, where several set-ups are often required. A recurrence numerical approach solves the thermal field in the specimen, which is depending on the thermal diffusivity of its material. The numerical method requires the temperature data from two different positions in the specimen, measured by two thermocouples connected to a temperature logger.
+
+---
+
+[Source 1008.2944v3]
+Title: Universal thermal and electrical conductivity from holography
+
+Abstract: It is known from earlier work of Iqbal, Liu (arXiv:0809.3808) that the boundary transport coefficients such as electrical conductivity (at vanishing chemical potential), shear viscosity etc. at low frequency and finite temperature can be expressed in terms of geometrical quantities evaluated at the horizon. In the case of electrical conductivity, at zero chemical potential gauge field fluctuation and metric fluctuation decouples, resulting in a trivial flow from horizon to boundary. In the presence of chemical potential, the story becomes complicated due to the fact that gauge field and metric fluctuation can no longer be decoupled. This results in a nontrivial flow from horizon to boundary. Though horizon conductivity can be expressed in terms of geometrical quantities evaluated at the horizon, there exist no such neat result for electrical conductivity at the boundary. In this paper we propose an expression for boundary conductivity expressed in terms of geometrical quantities evaluated at the horizon and thermodynamical quantities. We also consider the theory at finite cutoff outside the horizon (arXiv:1006.1902) and give an expression for cutoff dependent electrical conductivity, which interpolates smoothly between horizon conductivity and boundary conductivity . Using the results about the electrical conductivity we gain much insight into the universality of thermal conductivity to viscosity ratio proposed in arXiv:0912.2719.
+
+---
+
+[Source 2009.05074v1]
+Title: Thermal Model of an Omnimagnet for Performance Assessment and Temperature Control
+
+Abstract: An Omnimagnet is an electromagnetic device that enables remote magnetic manipulation of devices such as medical implants and microrobots. It is comprised of three orthogonal nested solenoids with a ferromagnetic core at the center. Electrical current within the solenoids leads to Joule heating, resulting in undesired temperature increase within the Omnimagnet. If the temperature exceeds the melting point of the wire insulation, device failure will occur. Thus, a study of heat transfer within an Omnimagnet is a necessity, particularly to maximize the performance of the device. For the first time, a transient heat transfer model, that incorporates all three heat transfer modes, is proposed and validated with experimental data for an Omnimagnet with maximum root mean square error equal to 8${\%}$ (4$^{\circ}$C). This transient model is not computationally expensive. It is relatively easy to apply to Omnimagnets with different structures. The accuracy of this model depends on the accuracy of the input data. The code is applied to calculate the maximum safe operational time at a fixed input current or the maximum safe input current for a fixed time interval. The maximum safe operational time and maximum safe input current depend on size and structure of the Omnimagnet and the lowest melting point of all the Omnimagnet materials. A parametric study shows that increasing convective heat transfer during cooling, and during heating with low input currents, is an effective method to increase the maximum operational time of the Omnimagnet.The thermal model is also presented in a state-space equation format that can be used in a real-time Kalman filter current controller to avoid device failure due to excessive heating.
+
+---
+
+[Source 1511.04560v1]
+Title: Magnetic field induced augmented thermal conduction phenomenon in magneto nanocolloids
+
+Abstract: Magnetic field induced drastically augmented thermal conductivity of magneto nanocolloids involving magnetic oxide nanoparticles, viz. Fe2O3, Fe3O4, Nickel oxide (NiO), Cobalt oxide (Co3O4), dispersed in different base fluids (heat transfer oil, kerosene, and ethylene glycol) have been reported. Experiments reveal the augmented thermal transport under the external applied magnetic field, with kerosene based MNCs showing at relatively low magnetic field intensities as compared to the heat transfer oil and EG based MNCs. A maximum thermal conductivity enhancement of 114 % is attained at 7.0 vol. % concentration and 0.1 T field intensity for Fe3O4/EG magneto nanocolloid. However, a maximum of 82% thermal conductivity enhancement is observed for Fe3O4/Kerosene magneto nanocolloid for the same concentration but relatively at low magnetic field (600 G). Thereby, a strong effect of fluid as well as particle physical properties on the chain formation propensity, leading to enhanced conduction, in such systems is observed. Co3O4 nanoparticles show insignificant effect on the thermal conductivity enhancement of MNCs due to their minimal magnetic moment. An analytical approach has been proposed to understand the mechanism and physics behind the thermal conductivity enhancement under external applied magnetic field, in tune with near field magnetostatic interactions as well as Neel relaxivity of the magnetic nanoparticles. Furthermore, the analytical model is able to predict the phenomenon of enhanced thermal conductivity as a function of physical parameters such as chain length, size and types of nanoparticles, fluid characteristics, magnetic field intensity, saturation magnetic moment, nanoparticle concentration etc. and good agreement with the experimental results has been observed.
+
+---
+
+[Source 1809.09692v2]
+Title: Interfacial thermal resistance between porous layers: impact on thermal conductivity of a multilayered porous structure
+
+Abstract: Features of thermal transport in multilayered porous silicon nanostructures are considered. Such nanostructures were fabricated by electrochemical etching of monocrystalline Si substrates by applying periodically changed current density. Hereby, the multilayered structures with specific phononic properties were formed. Photoacoustic (PA) technique in gas-microphone configuration was applied for thermal conductivity evaluation. Experimental amplitude-frequency dependencies were adjusted by temperature distribution simulation with thermal conductivity of the multilayered porous structure as a fitting parameter. The experimentally determined values of thermal conductivity were found to be significantly lower than theoretically calculated ones. Such difference was associated with the presence of thermal resistance at the interfaces between porous layers with different porosities arising because of elastic parameters mismatch (acoustical mismatch). Accordingly, the magnitude of this interfacial thermal resistance was experimentally evaluated for the first time. Furthermore, crucial impact of the resistance on thermal transport perturbation in a multilayered porous silicon structure was revealed.
+
+---
+
+[Source 1510.01938v2]
+Title: Ab initio studies on the lattice thermal conductivity of silicon clathrate frameworks II and VIII
+
+Abstract: The lattice thermal conductivities of silicon clathrate frameworks II and VIII are investigated by using ab initio lattice dynamics and iterative solution of the linearized Boltzmann transport equation(BTE) for phonons. Within the temperature range 100-350 K, the clathrate structures II and VIII were found to have lower lattice thermal conductivity values than silicon diamond structure (d-Si) by factors of 1/2 and 1/5, respectively. The main reason for the lower lattice thermal conductivity of the clathrate structure II in comparison to d-Si was found to be the harmonic phonon spectra, while in the case of the clathrate structure VIII, the difference is mainly due to the harmonic phonon spectra and partly due to shorter relaxation times of phonons. In the studied clathrate frameworks, the anharmonic effects have larger impact on the lattice thermal conductivity than the size of the unit cell. For the structure II, the predicted lattice thermal conductivity differs approximately by factor of 20 from the previous experimental results obtained for a polycrystalline sample at room temperature.
+
+---
+
+[Source 2406.03131v1]
+Title: Comprehensive Measurement of Three-Dimensional Thermal Conductivity Tensor Using a Beam-Offset Square-Pulsed Source (BO-SPS) Approach
+
+Abstract: Accurately measuring the three-dimensional thermal conductivity tensor is essential for understanding and engineering the thermal behavior of anisotropic materials. Existing methods often struggle to isolate individual tensor elements, leading to large measurement uncertainties and time-consuming iterative fitting procedures. In this study, we introduce the Beam-Offset Square-Pulsed Source (BO-SPS) method for comprehensive measurements of three-dimensional anisotropic thermal conductivity tensors. This method uses square-pulsed heating and precise temperature rise measurements to achieve high signal-to-noise ratios, even with large beam offsets and low modulation frequencies, enabling the isolation of thermal conductivity tensor elements. We demonstrate and validate the BO-SPS method by measuring X-cut and AT-cut quartz samples. For X-cut quartz, with a known relationship between in-plane and cross-plane thermal conductivities, we can determine the full thermal conductivity tensor and heat capacity simultaneously. For AT-cut quartz, assuming a known heat capacity, we can determine the entire anisotropic thermal conductivity tensor, even with finite off-diagonal terms. Our results yield consistent principal thermal conductivity values for both quartz types, demonstrating the method's reliability and accuracy. This research highlights the BO-SPS method's potential to advance the understanding of thermal behavior in complex materials.
+
+---
+
+[Source cond-mat_0208282v2]
+Title: Thermal conductivity of anisotropic and frustrated spin-1/2 chains
+
+Abstract: We analyze the thermal conductivity of anisotropic and frustrated spin-1/2 chains using analytical and numerical techniques. This includes mean-field theory based on the Jordan-Wigner transformation, bosonization, and exact diagonalization of systems with N<=18 sites. We present results for the temperature dependence of the zero-frequency weight of the conductivity for several values of the anisotropy Δ. In the gapless regime, we show that the mean-field theory compares well to known results and that the low-temperature limit is correctly described by bosonization. In the antiferromagnetic and ferromagnetic gapped regime, we analyze the temperature dependence of the thermal conductivity numerically. The convergence of the finite-size data is remarkably good in the ferromagnetic case. Finally, we apply our numerical method and mean-field theory to the frustrated chain where we find a good agreement of these two approaches on finite systems. Our numerical data do not yield evidence for a diverging thermal conductivity in the thermodynamic limit in case of the antiferromagnetic gapped regime of the frustrated chain.
+
+---
+
+[Source 1803.10300v1]
+Title: Feynman-Vernon model of a moving thermal environment
+
+Abstract: This paper reviews the formulation of the Feynman-Vernon model of linear dissipative systems for a standard Brownian particle moving in an external potential $V(x,t)$ and introduces the formulation of a generalized oscillator model of a Brownian particle coupled to a thermal environment moving with a given velocity $v_{env}$. Diffusion processes in a moving environment are of interest e.g. in the study of the motion of vortices in superfluids. The starting point of the paper is the formulation of the oscillator model that takes into account space and time invariance of a thermal environment [M. Patriarca, Statistical correlations in the oscillator model of quantum Brownian motion, Il Nuovo Cimento B, 111(1), 61-72 (1996), doi: 10.1007/BF02726201, arXiv:1801.02429], which has the property of being finite and consistent with the classical limit. The Langevin equation and the influence functional for a Brownian particle in a moving environment are derived.
+
+---
+
+[Source cond-mat_0005529v2]
+Title: Low Temperature Thermal Transport in High Temperature Superconducting BSCCO via Y-doped Insulating Analogue
+
+Abstract: In order to separate electronic and phonon mechanisms of thermal transport in high temperature superconducting Bi2212, we measured thermal conductivity of single crystals of Y-doped Bi2212, an insulating analogue of pure Bi2212, in the temperature range between 40 mK and 2 K. Temperature dependence of the thermal conductivity of insulating samples changes from T$^{1.7}$ between 1 and 2 K to $T^{2.6}$ below 200 mK, indicating saturation of the phonon mean free path with decreasing temperature. Overall, thermal conductivity of the insulating samples (which is due entirely to phonons) is strongly suppressed in comparison to that of the superconducting samples. Therefore, a large (and at the lowest temperatures, predominant) part of the total thermal transport in superconducting Bi2212 is due to electrons.

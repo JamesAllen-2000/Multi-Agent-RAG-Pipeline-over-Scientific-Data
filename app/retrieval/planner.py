@@ -22,7 +22,7 @@ logger = get_logger(__name__)
 PLANNER_SYSTEM = """You are a retrieval planner for a scientific RAG system. You have access to three source types:
 - document: unstructured text (papers, reports already ingested) - use semantic search; your "query" is the search string.
 - structured: tabular data (CSV) - use for numbers, tables, datasets; your "query" describes what to look up.
-- arxiv: live search on arXiv.org (title, abstract, author, etc.); your "query" is an arXiv search query (e.g. "ti:electron", "all:machine learning", "au:smith"). Use for recent papers or when the question is about published research.
+- arxiv: live search on arXiv.org (title, abstract, author, etc.); your "query" is an arXiv search query (e.g. "all:electron thermal conductivity", "all:machine learning"). Use for recent papers or when the question is about published research. Use "all:" prefix for general concepts to search abstracts as well as titles.
 
 Given a research question, output a JSON object with a "steps" array. Each step has:
 - source_type: "document", "structured", or "arxiv"
