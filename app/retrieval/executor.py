@@ -79,7 +79,16 @@ def _structured_query(query: str, settings) -> list[RetrievedChunk]:
                 path = Path(path_str)
                 if not path.exists():
                     continue
-                df = pd.read_csv(path, nrows=20, on_bad_lines="skip")
+                if path.suffix.lower() == ".csv":
+                    df = pd.read_csv(path, nrows=20, on_bad_lines="skip")
+                elif path.suffix.lower() in (".json", ".jsonl"):
+                    try:
+                        df = pd.read_json(path, lines=True, nrows=20)
+                    except Exception:
+                        df = pd.read_json(path).head(20)
+                else:
+                    df = pd.DataFrame()
+                    
                 text = f"Columns: {list(df.columns)}\n\n" + df.to_string()
                 chunks.append(
                     RetrievedChunk(

@@ -26,7 +26,7 @@ from app.models import SourceMetadata
 logger = get_logger(__name__)
 
 # File types we ingest from a Kaggle dataset
-KAGGLE_STRUCTURED_SUFFIXES = (".csv",)
+KAGGLE_STRUCTURED_SUFFIXES = (".csv", ".json", ".jsonl")
 KAGGLE_DOCUMENT_SUFFIXES = (".pdf", ".txt", ".md")
 
 

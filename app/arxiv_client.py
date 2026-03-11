@@ -107,10 +107,14 @@ def fetch_query(
     if max_results <= 0 or max_results > 2000:
         max_results = min(10, 2000)
     params: dict[str, str | int] = {
-        "search_query": search_query or "all:all",
         "start": start,
         "max_results": max_results,
     }
+    if search_query and search_query.strip():
+        params["search_query"] = search_query.strip()
+    elif not id_list:
+        params["search_query"] = "all:all"
+        
     if id_list and id_list.strip():
         params["id_list"] = id_list.strip()
     qs = urllib.parse.urlencode(params)

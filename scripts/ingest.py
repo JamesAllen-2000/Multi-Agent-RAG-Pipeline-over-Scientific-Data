@@ -40,7 +40,7 @@ def main():
         if args.source_type == "arxiv":
             meta = ingester.ingest(
                 Path("."),
-                search_query=args.query or "all:all",
+                search_query=args.query or "",
                 id_list=args.id_list,
                 max_results=args.max_results,
             )

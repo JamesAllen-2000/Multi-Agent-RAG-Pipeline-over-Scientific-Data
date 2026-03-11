@@ -66,7 +66,7 @@ class ArxivIngester(BaseIngester):
         self,
         path: Path | None = None,
         *,
-        search_query: str = "all:all",
+        search_query: str = "",
         id_list: str | None = None,
         max_results: int = 20,
         title: str | None = None,
@@ -79,7 +79,7 @@ class ArxivIngester(BaseIngester):
         """
         if id_list and id_list.strip():
             entries = fetch_query(
-                search_query or "all:all",
+                search_query,
                 id_list=id_list.strip(),
                 start=0,
                 max_results=min(max_results, 2000),

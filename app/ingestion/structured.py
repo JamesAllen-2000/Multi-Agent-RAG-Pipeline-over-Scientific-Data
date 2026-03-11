@@ -26,14 +26,22 @@ class StructuredIngester(BaseIngester):
     def ingest(self, path: Path, title: str | None = None, **kwargs) -> SourceMetadata:
         if not path.exists():
             raise FileNotFoundError(str(path))
-        if path.suffix.lower() != ".csv":
-            raise ValueError("Structured ingester supports only CSV for MVP")
+        suf = path.suffix.lower()
+        if suf not in (".csv", ".json", ".jsonl"):
+            raise ValueError("Structured ingester supports only CSV or JSON Lines for MVP")
 
-        df = pd.read_csv(path, nrows=0)
+        if suf == ".csv":
+            df = pd.read_csv(path, nrows=0)
+        else:
+            try:
+                df = pd.read_json(path, lines=True, nrows=1)
+            except Exception:
+                # Fallback to standard JSON if not lines
+                df = pd.read_json(path)
         columns = list(df.columns)
         # Copy to stable location under data/tables
         source_id = hashlib.sha256(path.resolve().as_posix().encode()).hexdigest()[:16]
-        dest = self.settings.data_dir / "tables" / f"{source_id}.csv"
+        dest = self.settings.data_dir / "tables" / f"{source_id}{suf}"
         shutil.copy2(path, dest)
 
         meta = SourceMetadata(
